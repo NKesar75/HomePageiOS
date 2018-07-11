@@ -88,12 +88,19 @@ class SignUpPage: UIViewController {
     func SignUp(){
         view.endEditing(true)
         if (isValidateFields()){
-            Auth.auth().signIn(withEmail: EmailInput.text!, password: PasswordInput.text!, completion: { (user, error) in
+            Auth.auth().createUser(withEmail: EmailInput.text!, password: PasswordInput.text!, completion: { (user, error) in
                 if let error = error {
                     AlertController.showAlert(self, title: "Error", message: error.localizedDescription)
                 } else {
-                    let VC = SetuppartonePage()
-                    self.navigationController?.pushViewController(VC, animated: true)
+                    
+                    Auth.auth().currentUser?.sendEmailVerification(completion: { (error) in
+                        if error != nil{
+                            AlertController.showAlert(self, title: "Error", message: "Error Connecting to Server Please Try Again")
+                        }else{
+                            let VC = VerfiyEmailPage()
+                            self.navigationController?.pushViewController(VC, animated: true)
+                        }
+                    })
                 }
             })
         }

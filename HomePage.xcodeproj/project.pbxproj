@@ -22,6 +22,7 @@
 		C44A3BEB20F5B5EB004019F4 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A3BEA20F5B5EA004019F4 /* AlertController.swift */; };
 		C44A3BED20F5C605004019F4 /* SetuppartonePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44A3BEC20F5C605004019F4 /* SetuppartonePage.swift */; };
 		C453989F20F5F44F000EFA79 /* Forgot Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = C453989E20F5F44F000EFA79 /* Forgot Password.swift */; };
+		C45398A120F6AD90000EFA79 /* VerfiyEmailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45398A020F6AD90000EFA79 /* VerfiyEmailPage.swift */; };
 		C4FB239520F5692E00D325BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FB239420F5692E00D325BA /* AppDelegate.swift */; };
 		C4FB239A20F5692E00D325BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4FB239820F5692E00D325BA /* Main.storyboard */; };
 		C4FB239C20F5692F00D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4FB239B20F5692F00D325BA /* Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		C44A3BEA20F5B5EA004019F4 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		C44A3BEC20F5C605004019F4 /* SetuppartonePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetuppartonePage.swift; sourceTree = "<group>"; };
 		C453989E20F5F44F000EFA79 /* Forgot Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forgot Password.swift"; sourceTree = "<group>"; };
+		C45398A020F6AD90000EFA79 /* VerfiyEmailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerfiyEmailPage.swift; sourceTree = "<group>"; };
 		C4FB239120F5692E00D325BA /* HomePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FB239420F5692E00D325BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4FB239920F5692E00D325BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				C44A3BDB20F58319004019F4 /* LoginPage.swift */,
 				C453989E20F5F44F000EFA79 /* Forgot Password.swift */,
 				C44A3BDD20F58327004019F4 /* SignUpPage.swift */,
+				C45398A020F6AD90000EFA79 /* VerfiyEmailPage.swift */,
 				C44A3BEC20F5C605004019F4 /* SetuppartonePage.swift */,
 				C44A3BE620F5B32D004019F4 /* HomeScreenPage.swift */,
 			);
@@ -404,6 +407,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HomePage/Pods-HomePage-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ACFloatingTextfield-Swift/ACFloatingTextfield_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MRCountryPicker/MRCountryPicker.framework",
@@ -415,6 +422,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACFloatingTextfield_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRCountryPicker.framework",
@@ -440,6 +451,7 @@
 				C44A3BDC20F58319004019F4 /* LoginPage.swift in Sources */,
 				C44A3BE720F5B32D004019F4 /* HomeScreenPage.swift in Sources */,
 				C453989F20F5F44F000EFA79 /* Forgot Password.swift in Sources */,
+				C45398A120F6AD90000EFA79 /* VerfiyEmailPage.swift in Sources */,
 				C44A3BDE20F58327004019F4 /* SignUpPage.swift in Sources */,
 				C44A3BEB20F5B5EB004019F4 /* AlertController.swift in Sources */,
 				C4FB239520F5692E00D325BA /* AppDelegate.swift in Sources */,

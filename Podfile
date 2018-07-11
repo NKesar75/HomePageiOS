@@ -15,6 +15,9 @@ target 'HomePage' do
     pod 'ACFloatingTextfield-Swift'
     pod 'MRCountryPicker', '~> 0.0.6'
     pod 'SearchEmojiOnString'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
 
   target 'HomePageTests' do
     inherit! :search_paths

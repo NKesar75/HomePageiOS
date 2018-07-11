@@ -1,5 +1,17 @@
 PODS:
   - ACFloatingTextfield-Swift (1.7)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.34.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.34.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.34.0):
+    - FBSDKCoreKit (~> 4.34.0)
   - Firebase/Auth (5.4.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.2)
@@ -58,6 +70,9 @@ PODS:
 
 DEPENDENCIES:
   - ACFloatingTextfield-Swift
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
@@ -69,6 +84,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ACFloatingTextfield-Swift
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - FBSDKShareKit
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -87,6 +106,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ACFloatingTextfield-Swift: df075d5ed5d441d8603f985fc106ec7ebe0c673f
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 0ff57f093b85c8c9d5aba697d3edf68a8960ce78
+  FBSDKLoginKit: 8c78f57a145afb756e4755e69195ebe08a42466e
+  FBSDKShareKit: 511d1dfc71204c0a8d69e6c5e3c964dcf0d4f3d9
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
   FirebaseAnalytics: b3628aea54c50464c32c393fb2ea032566e7ecc2
   FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
@@ -103,6 +126,6 @@ SPEC CHECKSUMS:
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   SearchEmojiOnString: 7344970449603396555d058a0dc297b5471bafa7
 
-PODFILE CHECKSUM: de6a38d8939f30261b2efc13182b6cf37a410aca
+PODFILE CHECKSUM: 2272d95fb331f74483bd7785e35b1c1eb42935cc
 
 COCOAPODS: 1.5.2

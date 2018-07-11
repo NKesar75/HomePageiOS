@@ -9,8 +9,9 @@
 import UIKit
 import ACFloatingTextfield_Swift
 import Firebase
+import FBSDKLoginKit
 
-class LoginPage: UIViewController {
+class LoginPage: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var EmailInput: ACFloatingTextfield!
     @IBOutlet weak var PasswordInput: ACFloatingTextfield!
@@ -26,6 +27,14 @@ class LoginPage: UIViewController {
         tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        
+        let loginButton = FBSDKLoginButton()
+        view.addSubview(loginButton)
+        //frame's are obselete, please use constraints instead because its 2016 after all
+        loginButton.frame = CGRect(x: 16, y: 50, width: view.frame.width - 32, height: 50)
+        
+        loginButton.delegate = self
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +56,19 @@ class LoginPage: UIViewController {
         login()
     }
     
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        print("logged out of facebook")
+    }
+    
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        if error != nil {
+            AlertController.showAlert(self, title: "Error", message: error.localizedDescription)
+        }else{
+            print("Successfully logged in with facebook...")
+            let VC = HomeScreenPage()
+            self.navigationController?.pushViewController(VC, animated: true)
+        }
+    }
     
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
