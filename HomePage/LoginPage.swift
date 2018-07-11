@@ -67,7 +67,6 @@ class LoginPage: UIViewController {
     }
     
     func login(){
-        print("got here")
         view.endEditing(true)
         if (isValidateFields()){
                 Auth.auth().signIn(withEmail: EmailInput.text!, password: PasswordInput.text!, completion: { (user, error) in
